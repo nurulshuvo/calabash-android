@@ -2,7 +2,8 @@ module Calabash
   module Android
     module Retry
       def self.retry(opts, &blk)
-        tries = opts[:tries]
+        #tries = opts[:tries]
+        tries = 300
         interval = opts[:interval]
 
         tries.times do |try|
